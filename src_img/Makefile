@@ -1,6 +1,6 @@
 CC=mpicc 
 
-DEBUG=-g -Wall -pedantic -std=c99
+DEBUG=-g -Wall -lm -pedantic -std=c99
 
 
 OPTIM=-O3
@@ -11,7 +11,7 @@ CFLAGS= $(DEBUG) $(OPTIM)
 
 
 EXE = cv
-SRC = elements_code.c 
+SRC = main.c 
 
 .SUFFIXES: .c .o
 
